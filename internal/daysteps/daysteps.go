@@ -13,9 +13,9 @@ import (
 
 const (
 	// Длина одного шага в метрах
-	stepLength = 0.65
+	stepLength float64 = 0.65
 	// Количество метров в одном километре
-	mInKm = 1000
+	mInKm float64 = 1000
 )
 
 func parsePackage(data string) (int, time.Duration, error) {

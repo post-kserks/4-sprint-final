@@ -11,11 +11,11 @@ import (
 
 // Основные константы, необходимые для расчетов.
 const (
-	lenStep                    = 0.65 // средняя длина шага.
-	mInKm                      = 1000 // количество метров в километре.
-	minInH                     = 60   // количество минут в часе.
-	stepLengthCoefficient      = 0.45 // коэффициент для расчета длины шага на основе роста.
-	walkingCaloriesCoefficient = 0.5  // коэффициент для расчета калорий при ходьбе
+	lenStep                    float64 = 0.65 // средняя длина шага.
+	mInKm                      float64 = 1000 // количество метров в километре.
+	minInH                     float64 = 60   // количество минут в часе.
+	stepLengthCoefficient      float64 = 0.45 // коэффициент для расчета длины шага на основе роста.
+	walkingCaloriesCoefficient float64 = 0.5  // коэффициент для расчета калорий при ходьбе
 )
 
 func parseTraining(data string) (int, string, time.Duration, error) {
